@@ -105,7 +105,7 @@ class StarWarsComponent extends Component
         ])
             ->get($this->url . $this->searchType . '/' . $personId . "?" . http_build_query($this->queryParams));
 
-        //dd($response, $this->url . $this->searchType .'/' . $personId . "?" . http_build_query($this->queryParams), $this->url . $this->searchType  . $personId . "?" . http_build_query($this->queryParams));
+
         // if api response fails, return this
         if (!$response->successful()) {
 
